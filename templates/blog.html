@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+    {{ authors }}
+    {% for entry in entries %}
+        <div class="post">
+            <h2>{{ entry.blog.name }}</h2>
+{#            <h2>{{ entry__blog__name }}</h2>#}
+            <p>{{ entry.id }}</p>
+            <p>{{ entry.headline }}</p>
+            <p>{{ entry.body_text }}</p>
+{#            <p>{{ entry.authors }}</p>#}
+            <p>{{ entry.rating }}</p>
+{#            <h1><a href="">{{ post.title }}</a></h1>#}
+{#            <span>{{ blog.tagline }}</span>#}
+        </div>
+    {% endfor %}
+{% endblock %}

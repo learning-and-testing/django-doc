@@ -1,0 +1,5 @@
+Django==2.2.8
+django-debug-toolbar==2.2
+djangorestframework==3.11.0
+pytest==5.3.5
+psycopg2

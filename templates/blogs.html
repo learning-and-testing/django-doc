@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+    {% for blog in blogs %}
+        <div class="post">
+            <h2>{{ blog.name }}</h2>
+{#            <h1><a href="">{{ post.title }}</a></h1>#}
+            <span>{{ blog.tagline }}</span>
+        </div>
+    {% endfor %}
+{% endblock %}
